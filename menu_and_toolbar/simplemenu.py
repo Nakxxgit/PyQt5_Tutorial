@@ -18,7 +18,7 @@ class Example(QMainWindow):
         exitAct.setStatusTip('Exit application') # 설명 추가
         exitAct.triggered.connect(qApp.quit) # 눌렀을 경우 프로그램 종료
 
-        self.statusBar
+        self.statusBar()
 
         menubar = self.menuBar() # 메뉴바 생성
         fileMenu = menubar.addMenu('&File') # File 메뉴 추가. 이번에도 마찬가지로 QString 기능에 의해 바로가기가 생성된다
