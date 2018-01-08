@@ -10,7 +10,7 @@ class Example(QMainWindow):
 
     def initUI(self):
 
-        exitAct = QAction(QIcon('./icon/exit.png'), 'Exit', self) # Exit 액션 생성
+        exitAct = QAction(QIcon('../Icon/exit.png'), 'Exit', self) # Exit 액션 생성
         exitAct.setShortcut('Ctrl+Q') # Exit 액션 단축키 설정
         exitAct.triggered.connect(qApp.quit) # Exit이 실행될 경우 앱 종료
 

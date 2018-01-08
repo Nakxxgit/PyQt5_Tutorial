@@ -13,7 +13,7 @@ class Example(QMainWindow):
         textEdit = QTextEdit() # 텍스트에딧 위젯 생성
         self.setCentralWidget(textEdit) # 텍스트에딧 위젯을 윈도우의 중앙위젯으로 설정.
 
-        exitAct = QAction(QIcon('./icon/exit.png'), 'Exit', self)
+        exitAct = QAction(QIcon('../Icon/exit.png'), 'Exit', self)
         exitAct.setShortcut('Ctrl+Q')
         exitAct.setStatusTip('Exit Application')
         exitAct.triggered.connect(self.close)

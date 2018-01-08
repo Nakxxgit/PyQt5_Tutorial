@@ -15,7 +15,7 @@ class Example(QMainWindow):
         btn2 = QPushButton("Button 2", self)
         btn2.move(150, 50)
 
-        btn1.clicked.connect(self.buttonClicked)
+        btn1.clicked.connect(self.buttonClicked) # 두 버튼을 하나의 슬롯(buttonClicked)에 연결
         btn2.clicked.connect(self.buttonClicked)
 
         self.statusBar()
@@ -24,10 +24,10 @@ class Example(QMainWindow):
         self.setWindowTitle('Event sender')
         self.show()
 
-    def buttonClicked(self):
+    def buttonClicked(self): # 이벤트 함수 수정
 
         sender = self.sender()
-        self.statusBar().showMessage(sender.text() + ' was pressed')
+        self.statusBar().showMessage(sender.text() + ' was pressed') # 눌린 버튼을 상태표시줄에 표시
 
 if __name__ == '__main__':
     

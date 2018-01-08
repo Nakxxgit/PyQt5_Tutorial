@@ -12,7 +12,7 @@ class Example(QWidget): # QWidget을 상속하는 클래스 Example 생성
 
         self.setGeometry(300, 300, 300, 220) # 창의 위치 및 크기 설정
         self.setWindowTitle('Icon')
-        self.setWindowIcon(QIcon('./Icon/ex.png')) # 해당 파일을 QIcon 객체로 생성 후 창의 아이콘으로 설정
+        self.setWindowIcon(QIcon('../Icon/ex.png')) # 해당 파일을 QIcon 객체로 생성 후 창의 아이콘으로 설정
 
         self.show()
 
