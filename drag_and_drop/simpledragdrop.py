@@ -1,7 +1,7 @@
 import sys
 from PyQt5.QtWidgets import QPushButton, QWidget, QLineEdit, QApplication
 
-class Button(QPushButton): # 기능 수정을 위해 QPushButton을 상속
+class Button(QPushButton): # 기능 재정의를 위해 QPushButton 상속
 
     def __init__(self, title, parent):
         super().__init__(title, parent)
